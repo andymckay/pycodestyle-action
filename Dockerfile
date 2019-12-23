@@ -8,4 +8,6 @@ LABEL "com.github.actions.color"="6f42c1"
 RUN pip install --upgrade pip
 RUN pip install pycodestyle
 
-CMD ["pycodestyle", "/github/workspace/"]
+CMD ["- name: Python Style Checker
+  uses: andymckay/pycodestyle-action@0.1.3
+  ", "/github/workspace/"]
